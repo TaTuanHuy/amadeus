@@ -1,0 +1,452 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 73px;
+  max-height: 73px;
+  z-index: 1000;
+}
+.nav-item {
+  padding: 0 10px;
+}
+.item-search {
+  border-right: 1px solid #cccccc;
+}
+.navbar-search {
+  color: #005eb8;
+}
+.body {
+  margin-top: 73px;
+}
+
+.body_content {
+  position: relative;
+  height: 600px;
+  max-height: 600px;
+  overflow: hidden;
+  background-color: #000835;
+}
+.head-body-p {
+  font-size: 64px;
+  font-weight: 500;
+}
+.body-title {
+  color: white !important;
+  position: relative;
+  padding: 64px;
+  z-index: 1;
+  height: 500px;
+  max-height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  align-content: end;
+}
+.body-button {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  /* background-color: #000835; */
+}
+.button-custom {
+  font-size: 18px;
+  padding: 11px 24px;
+}
+
+.body_content-2 {
+  position: relative;
+  height: 700px;
+  max-height: 700px;
+  overflow: hidden;
+}
+
+.background-image-body-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-image: url("https://amadeus.com/content/dam/amadeuswebevo/brand/amadeus/photos/sections/homepage/homepage-amadeus.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 700px;
+  max-height: 700px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.stats-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.stats-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  background-color: #f0f4ff;
+  border: 2px solid #ffffff;
+  color: #0056b3;
+  text-align: center;
+  font-weight: bold;
+  margin: 10px;
+  flex: 1 1 calc(50% - 20px); /* Flex-grow, flex-shrink, and flex-basis for responsiveness */
+  max-width: calc(50% - 20px); /* Set the max-width to align items */
+}
+@media (min-width: 768px) {
+  .stats-list li {
+    flex-basis: calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+  }
+}
+.content-2 {
+  position: relative;
+  z-index: 1;
+  align-items: center;
+  height: 100%;
+  color: white;
+}
+.stat-card {
+  border: 2px solid #ffffff;
+  color: #0056b3;
+  text-align: center;
+  font-weight: bold;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  justify-items: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.stats-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  width: 100%;
+  aspect-ratio: 1;
+  color: #007bff;
+  font-weight: bold;
+  text-align: center;
+}
+
+.stats-item:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid #fff;
+}
+
+.stats-item:nth-child(even) {
+  background-color: rgba(0, 123, 255, 0.1);
+  border: 2px solid #007bff;
+}
+.background-color-white {
+  background-color: #ebf3ff !important;
+}
+
+.stats-item h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.stats-item p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.background-image-body-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-image: url("https://amadeus.com/content/dam/amadeuswebevo/brand/amadeus/colors/transparent/svg/dark-transparent-outline-circle-up.svg");
+  background-size: cover;
+  background-position: center;
+  background-color: #c5d5f9 !important;
+  padding-top: 700px;
+  max-height: 700px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.content-3 {
+  position: relative;
+  z-index: 1;
+  align-items: center;
+  height: 100%;
+  /* color: white; */
+}
+.background-image-content-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-image: url("https://amadeus.com/content/dam/amadeuswebevo/brand/amadeus/colors/transparent/svg/dark-transparent-outline-circle-up.svg");
+  background-size: cover;
+  background-position: center;
+  background-color: #c5d5f9 !important;
+  padding-top: 700px;
+  max-height: 700px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.describle-content-3 {
+  padding: 72px 24px;
+}
+
+.content-3-item {
+  padding: 5px;
+  font-size: 18px;
+}
+.content-3-item a {
+  text-decoration: none;
+  font-weight: bold;
+}
+.content-3-item-button {
+  padding-top: 40px;
+}
+.content-3-item-button button {
+  padding: 14px 24px;
+  font-size: 18px;
+}
+
+.background-image-body-4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-image: url("https://amadeus.com/content/dam/amadeuswebevo/brand/amadeus/photos/sections/homepage/image.jpg.transform/large/img.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: #c5d5f9 !important;
+  padding-top: 500px;
+  max-height: 500px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.content-4 {
+  position: relative;
+  height: 500px;
+  max-height: 500px;
+}
+.describle-content-4 {
+  padding: 24px;
+}
+.content-4-item {
+  padding: 5px;
+  font-size: 18px;
+}
+.content-4-item a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.content-4-item-button button {
+  margin-top: 24px;
+  padding: 10px 16px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.overlay-content-5 {
+  padding: 72px 0;
+}
+
+.body-6 {
+  background-color: #c5d5f9;
+  padding: 72px 0;
+}
+.body-6-head {
+  margin-bottom: 40px;
+}
+.body-6-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 16px 0;
+  color: #000835;
+}
+.body-6-paragraph {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 16px;
+  color: #000835;
+}
+
+.blog-card {
+  background-color: #fff;
+  border: none;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  height: 400px;
+}
+
+.blog-card img {
+  height: 180px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.blog-card .card-body {
+  padding: 1rem;
+}
+
+.blog-card h5 {
+  font-size: 16px;
+  margin-top: 8px;
+  font-weight: bold;
+  color: #000835;
+}
+
+.blog-card p {
+  color: #000;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.blog-card small {
+  display: block;
+  color: #007bff;
+  font-size: 13px;
+}
+.card-description {
+  flex: 1;
+}
+.card-description small {
+  display: block;
+  color: #000835;
+  font-size: 16px;
+}
+
+footer .container {
+  padding: 40px 0;
+}
+.footer-body h5 {
+  color: #666666;
+  font-size: 18px;
+  font-weight: 100;
+  margin-bottom: 12px;
+}
+.footer-head {
+  margin: 0 0 40px;
+}
+.footer-body {
+  padding: 24px 0 40px 0;
+}
+.list-footer {
+  list-style: none;
+  padding: 0;
+}
+.list-footer li {
+  margin: 4px 0;
+}
+.list-footer a {
+  color: #0c66e1;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.list-footer a:hover {
+  text-decoration: underline;
+}
+.col-cus {
+  margin: 16px 0;
+}
+.footer-body-1 {
+  padding: 24px 0 40px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.footer-control {
+  margin-top: 40px;
+  color: #666666;
+}
+.footer-control span {
+  font-size: 18px;
+  margin-right: 25px;
+}
+.footer-control .btn-outline-primary {
+  font-size: 18px;
+  color: #0c66e1;
+  padding: 10px 16px;
+  font-weight: bold;
+}
+.footer-control .btn-outline-primary:hover {
+  border-color: transparent;
+  color: #ffffff;
+  background-color: #0a2f62;
+}
+.footer-social-network {
+  margin: 16px 0 0 0;
+}
+.footer-social-network span {
+  color: #666666;
+}
+.footer-social-network ul {
+  list-style: none;
+}
+.footer-social-network li i {
+  font-size: 26px;
+  color: #666666;
+}
+.list-social li {
+  margin: 0 15px;
+}
+.color-1a {
+  color: #1a1a1a;
+}
+.content-5-item h6 {
+  font-size: 16px;
+  color: #1a1a1a;
+}
+.content-5-item h5 {
+  font-size: 32px;
+  color: #1a1a1a;
+}
+.content-5-item p {
+  font-size: 18px;
+  color: #1a1a1a;
+}
+.carousel-inner {
+  position: relative;
+}
+.carousel-caption {
+  position: unset;
+  text-align: unset;
+}
+/* #carouselExampleIndicators {
+  display: none;
+} */
+/* .carousel-item {
+  background-color: white;
+} */

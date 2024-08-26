@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <style>
+      /* Custom styles for the hero section */
+      .hero-section {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-image: url("https://amadeus.com/content/dam/amadeuswebevo/brand/amadeus/colors/sky/gradient/desktop/sky-gradient-circle-up-desktop.jpg");
+        background-size: cover;
+        background-position: center;
+        padding-top: 500px;
+        max-height: 500px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80%;
+        background-color: rgba(0, 0, 51, 0.5); /* Dark blue overlay */
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 1;
+      }
+
+      .hero-button {
+        background-color: #007bff;
+        border: none;
+        padding: 10px 20px;
+        font-weight: bold;
+        border-radius: 5px;
+        color: white;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="navbar navbar-expand-lg navbar-light bg-light header">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img
+            src="./amadeus-logo-dark-sky.png"
+            alt="Logo"
+            style="height: 16px"
+            background-color="transparent"
+          />
+          <!-- <strong></strong>     -->
+        </a>
+
+        <!-- Navbar Toggle (for mobile view) -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse align-items-center" id="navbarNav">
+          <ul class="navbar-nav" style="color: '#000835'">
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                >Solutions <i class="fa-solid fa-chevron-down"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Support & Training
+                <i class="fa-solid fa-chevron-down"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Partners
+                <i class="fa-solid fa-chevron-down"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Resources
+                <i class="fa-solid fa-chevron-down"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Company
+                <i class="fa-solid fa-chevron-down"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="collapse navbar-collapse justify-content-end align-items-center"
+          id="navbarNav"
+        >
+          <!-- Icons on the right -->
+          <ul class="navbar-nav">
+            <li class="nav-item item-search">
+              <a class="nav-link navbar-search" href="#">
+                <i class="fas fa-search"></i> Search
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-earth-asia"></i> English
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="body">
+      <div class="body_content">
+        <section class="hero-section"></section>
+        <div class="container body-title">
+          <div>
+            <p class="head-body-p">Amadeus.</p>
+            <p class="head-body-p">It's how travel works smarter</p>
+          </div>
+        </div>
+        <div class="container body-button">
+          <button type="button" class="btn btn-primary button-custom">
+            Learn how
+          </button>
+        </div>
+      </div>
+      <div class="body_content-2 align-items-center">
+        <section class="background-image-body-2"></section>
+        <div class="container content-2 d-flex justify-content-end mt-6">
+          <div class="col col-5">
+            <p class="fs-5">About Amadeus</p>
+            <h3 class="fs-2">At the heart of travel</h3>
+            <p class="fs-5">
+              Amadeus technology powers the global travel and tourism industry.
+            </p>
+            <p class="fs-5">
+              From airlines to search engines, travel agencies to hotels, the
+              world's top travel brands rely on Amadeus to help create
+              exceptional traveler experiences.
+            </p>
+            <div class="container">
+              <div class="stats-grid">
+                <div class="stats-item background-color-white">
+                  <h2>184</h2>
+                  <p>Airport operators</p>
+                </div>
+                <div class="stats-item">
+                  <h2>1M+</h2>
+                  <p>Hotel properties</p>
+                </div>
+                <div class="stats-item background-color-white">
+                  <h2>400+</h2>
+                  <p>Airlines</p>
+                </div>
+                <div class="stats-item">
+                  <h2>147</h2>
+                  <p>Ground handlers</p>
+                </div>
+                <div class="stats-item background-color-white">
+                  <h2>25+</h2>
+                  <p>Rail operators</p>
+                </div>
+                <div class="stats-item">
+                  <h2>105</h2>
+                  <p>Tour operators</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="body_content-2 align-items-center">
+        <section class="background-image-body-3"></section>
+        <div class="container content-3 d-flex justify-content-between">
+          <div class="col col-5">
+            <!-- <div class="container mt-5 "> -->
+            <div
+              class="solutions-card background-color-white describle-content-3"
+            >
+              <h2 style="font-size: 36px; margin-bottom: 10px">
+                Discover our solutions
+              </h2>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="content-3-item">
+                    <a href="#">Airlines <span>→</span></a>
+                  </div>
+                  <div class="content-3-item">
+                    <a href="#">Airports <span>→</span></a>
+                  </div>
+                  <div class="content-3-item">
+                    <a href="#">Travel Sellers <span>→</span></a>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="content-3-item">
+                    <a href="#">Corporations <span>↗</span></a>
+                  </div>
+                  <div class="content-3-item">
+                    <a href="#">Hospitality <span>↗</span></a>
+                  </div>
+                  <div class="content-3-item">
+                    <a href="#">Payments <span>↗</span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="content-3-item-button">
+                <button class="btn btn-primary contact-btn">
+                  Contact us <span>→</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col col-5">
+            <img
+              src="https://amadeus.com/content/dam/amadeuswebevo/brand/amadeus/photos/sections/homepage/image%20(4).png.transform/large/img.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div style="padding: 60px 0 0"></div>
+
+      <!-- body 4 -->
+      <div>
+        <div class="container content-4">
+          <section class="background-image-body-4"></section>
+          <div
+            class="container content-3 d-flex justify-content-end align-items-center"
+          >
+            <div class="col col-6">
+              <div
+                class="solutions-card background-color-white describle-content-4"
+              >
+                <div class="content-4-item">
+                  <a href="#">A deeper look</a>
+                </div>
+                <h2 style="font-size: 32px; margin: 16px 0; font-weight: bold">
+                  Travel Technology Investment Trends 2024
+                </h2>
+                <p style="font-size: 18px">
+                  Discover which technologies airline and travel seller decision
+                  makers plan to invest in in 2024 to maximize their business
+                  impact.
+                </p>
+                <div class="content-4-item-button">
+                  <button class="btn btn-primary contact-btn">
+                    Access the report <span>→</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="overlay-content-5">
+        <div class="container">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active d-flex justify-content-between">
+                <div class="col col-7">
+                  <iframe
+                    width="720"
+                    height="440"
+                    src="https://www.youtube.com/embed/EXux4Ih69Jk?si=IAtkSZawkMGxIXo8"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div
+                  class="carousel-caption d-none d-md-block color-1a col col-5"
+                >
+                  <h6>Watch now</h6>
+                  <h5>Microsoft & Amadeus: A technological journey</h5>
+                  <p>
+                    Hear from Judson Althoff, EVP &amp; Chief Commercial
+                    Officer, Microsoft, and Sylvain Roy, CTO, Amadeus on how our
+                    companies’ partnership has progressed and how we co‑innovate
+                    to provide great solutions to our respective customers.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item d-flex justify-content-between">
+                <div class="col col-7">
+                  <iframe
+                    width="720"
+                    height="440"
+                    src="https://www.youtube.com/embed/8DHK9sI52bI?si=cbAhOSKnuHrncTGB"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div
+                  class="carousel-caption d-none d-md-block color-1a col col-5"
+                >
+                  <h6>Watch now</h6>
+                  <h5>British Airways & Amadeus: 25 years of partnership</h5>
+                  <p>
+                    Listen to Colm Lacy, Chief Commercial Officer, British
+                    Airways, and Decius Valmorbida, President of Travel,
+                    Amadeus, discuss our companies’ long partnership and
+                    commitment to technology excellence with a shared vision of
+                    putting travelers first.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item d-flex justify-content-between">
+                <div class="col col-7">
+                  <iframe
+                    width="720"
+                    height="440"
+                    src="https://www.youtube.com/embed/62-yOnV9gBw?si=oR3-Y7ZSOTq9YwC7"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div
+                  class="carousel-caption d-none d-md-block color-1a col col-5"
+                >
+                  <h6>Watch now</h6>
+                  <h5>Cytric Easy: Transforming business travel</h5>
+                  <p>
+                    Planning a business trip? Watch how easy it can be with
+                    Cytric Easy, the only travel and expense tool embedded in
+                    Microsoft Teams.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Body-6 -->
+      <div class="body-6">
+        <div class="container">
+          <div class="body-6-head">
+            <div class="d-flex justify-content-between">
+              <div class="col col-6">
+                <div style="color: #000835; font-size: 16px; font-weight: bold">
+                  Learn more
+                </div>
+                <h2 class="body-6-title">
+                  How do you stay updated on the latest technology trends?
+                </h2>
+                <p class="body-6-paragraph">
+                  Technology is evolving faster than ever. Check out our blog
+                  for insights that will help you stay ahead of the curve...
+                </p>
+              </div>
+              <div class="col col-2 d-flex align-items-end">
+                <div class="content-3-item">
+                  <a style="color: #000835" href="#"
+                    >Visit our blog <span>→</span></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="body-6-body">
+            <div class="container mt-5">
+              <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                  <div class="card blog-card">
+                    <img
+                      src="https://amadeus.com/content/dam/amadeuswebevo/brand/amadeus/photos/sections/resources/blog/2024/08/finnair-jet-tarmac-profile-runway.jpg.transform/large/img.jpg"
+                      class="card-img-top"
+                      alt="Blog Image"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <small>Blog</small>
+                      <h5>
+                        Amadeus Travel Tech Talk: Finnair on airline modern
+                        retailing transition
+                      </h5>
+                      <div class="card-description d-flex flex-column-reverse">
+                        <small>August 1, 2024</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card blog-card">
+                    <img
+                      src="https://amadeus.com/content/dam/amadeus/images/en/blog/2024/07/neviojohnlonerganblog.jpg.transform/large/img.jpg"
+                      class="card-img-top"
+                      alt="Blog Image"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <small>Blog</small>
+                      <h5>
+                        How does Amadeus Nevio enable innovation and
+                        differentiation through technology excellence?
+                      </h5>
+                      <div class="card-description d-flex flex-column-reverse">
+                        <small>July 31, 2024</small>
+                        <small>John Lonergan</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card blog-card">
+                    <img
+                      src="https://amadeus.com/content/dam/amadeuswebevo/brand/amadeus/photos/brand-centre/wide/medium/hiker-desert-sand-dune-mountains-wide-md.jpg.transform/large/img.jpg"
+                      class="card-img-top"
+                      alt="Blog Image"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <small>Blog</small>
+                      <h5>
+                        How can travel sellers use technology to achieve a more
+                        sustainable future?
+                      </h5>
+                      <div class="card-description d-flex flex-column-reverse">
+                        <small>July 8, 2024</small>
+                        <small>Elena Ávila</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card blog-card">
+                    <img
+                      src="https://amadeus.com/content/dam/amadeuswebevo/brand/amadeus/photos/sections/homepage/promo/luis-marotto-promo.png.transform/large/img.png"
+                      class="card-img-top"
+                      alt="Blog Image"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <small>Blog</small>
+                      <h5>
+                        Amadeus Investor Day 2024: A bright future for our
+                        industry
+                      </h5>
+                      <div class="card-description d-flex flex-column-reverse">
+                        <small>June 19, 2024</small>
+                        <small>Luis Maroto</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+
+      <footer>
+        <div class="container">
+          <div class="footer-head d-flex justify-content-between">
+            <a class="navbar-brand" href="#">
+              <img
+                src="./amadeus-logo-dark-sky.png"
+                alt="Logo"
+                style="height: 16px"
+                background-color="transparent"
+              />
+              <!-- <strong></strong>     -->
+            </a>
+            <a style="font-size: 16px" class="nav-link" href="#">
+              <i style="font-size: 24px" class="fas fa-globe"></i> English
+            </a>
+          </div>
+          <div class="footer-body d-flex flex-row-reverse">
+            <div class="col col-10">
+              <div class="row footer-body-1">
+                <div class="col col-4 col-cus">
+                  <h5>Comapny</h5>
+                  <ul class="list-footer">
+                    <li>
+                      <a href="">About Amadeus</a>
+                    </li>
+                    <li>
+                      <a href="">Careers</a>
+                    </li>
+                    <li>
+                      <a href="">Contact</a>
+                    </li>
+                    <li>
+                      <a href="">Investor relations</a>
+                    </li>
+                    <li>
+                      <a href="">Newsroom</a>
+                    </li>
+                    <li>
+                      <a href="">Offices</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col col-4 col-cus">
+                  <h5>Industry Solutions</h5>
+                  <ul class="list-footer">
+                    <li>
+                      <a href="">Airlines</a>
+                    </li>
+                    <li>
+                      <a href="">Airports</a>
+                    </li>
+                    <li>
+                      <a href="">Corporations</a>
+                    </li>
+                    <li>
+                      <a href="">Hospitality</a>
+                    </li>
+                    <li>
+                      <a href="">Travel sellers</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col col-4 col-cus">
+                  <h5>Resources</h5>
+                  <ul class="list-footer">
+                    <li>
+                      <a href="">Blog</a>
+                    </li>
+                    <li>
+                      <a href="">Customer stories</a>
+                    </li>
+                    <li>
+                      <a href="">Resource center</a>
+                    </li>
+                    <li>
+                      <a href="">Training</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col col-4 col-cus">
+                  <h5>Support</h5>
+                  <ul class="list-footer">
+                    <li>
+                      <a href="">Customer support</a>
+                    </li>
+                    <li>
+                      <a href="">Amadeus Service Hub</a>
+                    </li>
+                    <li>
+                      <a href="">Community</a>
+                    </li>
+                    <li>
+                      <a href="">Developers</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col col-4 col-cus">
+                  <h5>Other Amadeus brands</h5>
+                  <ul class="list-footer">
+                    <li>
+                      <a href="">Navitaire</a>
+                    </li>
+                    <li>
+                      <a href="">Outpayce</a>
+                    </li>
+                    <li>
+                      <a href="">Voxel</a>
+                    </li>
+                    <li>
+                      <a href="">Vision Box</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col col-4 col-cus">
+                  <h5>Legal</h5>
+                  <ul class="list-footer">
+                    <li>
+                      <a href="">Privacy & Legal Notices</a>
+                    </li>
+                    <li>
+                      <a href="">Cookies</a>
+                    </li>
+                    <li>
+                      <a href="">Speak-up</a>
+                    </li>
+                    <li>
+                      <a href="">Terms of Use</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer-control col col-12">
+                  <span>Stay up to date with all things Amadeus</span>
+                  <button type="button" class="btn btn-outline-primary">
+                    Subcriber now
+                  </button>
+                </div>
+              </div>
+              <div class="row">
+                <div
+                  class="footer-social-network d-flex justify-content-between"
+                >
+                  <span>© Amadeus IT Group SA</span>
+                  <ul class="d-flex list-social">
+                    <li>
+                      <a href="">
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <i class="fa-brands fa-x-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <i class="fa-brands fa-youtube"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"
+  ></script>
+</html>
