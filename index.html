@@ -159,7 +159,7 @@
       <div class="body_content-2 align-items-center">
         <section class="background-image-body-2"></section>
         <div class="container content-2 d-flex justify-content-end mt-6">
-          <div class="col col-5">
+          <div class="col col-5 content-about">
             <p class="fs-5">About Amadeus</p>
             <h3 class="fs-2">At the heart of travel</h3>
             <p class="fs-5">
@@ -201,11 +201,12 @@
           </div>
         </div>
       </div>
-      <div class="body_content-2 align-items-center">
+      <div class="body_content-2 body_content-3 align-items-center">
         <section class="background-image-body-3"></section>
-        <div class="container content-3 d-flex justify-content-between">
-          <div class="col col-5">
-            <!-- <div class="container mt-5 "> -->
+        <div
+          class="container content-3 d-flex justify-content-between content-3-mobile"
+        >
+          <div class="col col-5 item-content-3">
             <div
               class="solutions-card background-color-white describle-content-3"
             >
@@ -243,8 +244,9 @@
               </div>
             </div>
           </div>
-          <div class="col col-5">
+          <div class="col col-5 item-content-3 item-content-3-image">
             <img
+              class="image-content-3"
               src="https://amadeus.com/content/dam/amadeuswebevo/brand/amadeus/photos/sections/homepage/image%20(4).png.transform/large/img.png"
               alt=""
             />
@@ -260,7 +262,7 @@
           <div
             class="container content-3 d-flex justify-content-end align-items-center"
           >
-            <div class="col col-6">
+            <div class="col col-6 content-4-overlay">
               <div
                 class="solutions-card background-color-white describle-content-4"
               >
@@ -317,8 +319,9 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active d-flex justify-content-between">
-                <div class="col col-7">
+                <div class="col col-7 content-4-item">
                   <iframe
+                    class="video"
                     width="720"
                     height="440"
                     src="https://www.youtube.com/embed/EXux4Ih69Jk?si=IAtkSZawkMGxIXo8"
@@ -330,7 +333,7 @@
                   ></iframe>
                 </div>
                 <div
-                  class="carousel-caption d-none d-md-block color-1a col col-5"
+                  class="carousel-caption d-none d-md-block color-1a col col-5 content-4-item"
                 >
                   <h6>Watch now</h6>
                   <h5>Microsoft & Amadeus: A technological journey</h5>
@@ -343,8 +346,9 @@
                 </div>
               </div>
               <div class="carousel-item d-flex justify-content-between">
-                <div class="col col-7">
+                <div class="col col-7 content-4-item">
                   <iframe
+                    class="video"
                     width="720"
                     height="440"
                     src="https://www.youtube.com/embed/8DHK9sI52bI?si=cbAhOSKnuHrncTGB"
@@ -356,7 +360,7 @@
                   ></iframe>
                 </div>
                 <div
-                  class="carousel-caption d-none d-md-block color-1a col col-5"
+                  class="carousel-caption d-none d-md-block color-1a col col-5 content-4-item"
                 >
                   <h6>Watch now</h6>
                   <h5>British Airways & Amadeus: 25 years of partnership</h5>
@@ -370,8 +374,9 @@
                 </div>
               </div>
               <div class="carousel-item d-flex justify-content-between">
-                <div class="col col-7">
+                <div class="col col-7 content-4-item">
                   <iframe
+                    class="video"
                     width="720"
                     height="440"
                     src="https://www.youtube.com/embed/62-yOnV9gBw?si=oR3-Y7ZSOTq9YwC7"
@@ -383,7 +388,7 @@
                   ></iframe>
                 </div>
                 <div
-                  class="carousel-caption d-none d-md-block color-1a col col-5"
+                  class="carousel-caption d-none d-md-block color-1a col col-5 content-4-item"
                 >
                   <h6>Watch now</h6>
                   <h5>Cytric Easy: Transforming business travel</h5>
@@ -427,8 +432,8 @@
       <div class="body-6">
         <div class="container">
           <div class="body-6-head">
-            <div class="d-flex justify-content-between">
-              <div class="col col-6">
+            <div class="d-flex justify-content-between head-6-overlay">
+              <div class="col col-6 mobile-6-item">
                 <div style="color: #000835; font-size: 16px; font-weight: bold">
                   Learn more
                 </div>
@@ -440,8 +445,8 @@
                   for insights that will help you stay ahead of the curve...
                 </p>
               </div>
-              <div class="col col-2 d-flex align-items-end">
-                <div class="content-3-item">
+              <div class="col col-2 mobile-6-item d-flex align-items-end">
+                <div class="content-3-item mobile-6-item">
                   <a style="color: #000835" href="#"
                     >Visit our blog <span>→</span></a
                   >
@@ -539,7 +544,7 @@
       <!-- footer -->
 
       <footer>
-        <div class="container">
+        <div class="container footer-outline">
           <div class="footer-head d-flex justify-content-between">
             <a class="navbar-brand" href="#">
               <img
@@ -548,14 +553,73 @@
                 style="height: 16px"
                 background-color="transparent"
               />
-              <!-- <strong></strong>     -->
             </a>
-            <a style="font-size: 16px" class="nav-link" href="#">
+            <a style="font-size: 16px" class="nav-link footter-link" href="#">
               <i style="font-size: 24px" class="fas fa-globe"></i> English
             </a>
           </div>
           <div class="footer-body d-flex flex-row-reverse">
-            <div class="col col-10">
+            <div class="col col-10 footer-overlay">
+              <div class="container my-4 footer-mobile">
+                <ul class="menu-list">
+                  <li>
+                    Company
+                    <ul class="sub-menu">
+                      <li>About Us</li>
+                      <li>Leadership</li>
+                      <li>Careers</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Industry Solutions
+                    <ul class="sub-menu">
+                      <li>Airlines</li>
+                      <li>Hotels</li>
+                      <li>Travel Agencies</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Resources
+                    <ul class="sub-menu">
+                      <li>Blog</li>
+                      <li>Reports</li>
+                      <li>Case Studies</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Support
+                    <ul class="sub-menu">
+                      <li>Help Center</li>
+                      <li>Contact Us</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Other Amadeus brands
+                    <ul class="sub-menu">
+                      <li>Amadeus IT Group</li>
+                      <li>Amadeus Travel</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Legal
+                    <ul class="sub-menu">
+                      <li>Privacy Policy</li>
+                      <li>Terms of Use</li>
+                    </ul>
+                  </li>
+                </ul>
+                <div class="footer-control col col-12">
+                  <span class="head-footer-btn-primary"
+                    >Stay up to date with all things Amadeus</span
+                  >
+                  <button
+                    type="button"
+                    class="btn btn-outline-primary footer-btn-primary"
+                  >
+                    Subcriber now
+                  </button>
+                </div>
+              </div>
               <div class="row footer-body-1">
                 <div class="col col-4 col-cus">
                   <h5>Comapny</h5>
@@ -675,11 +739,12 @@
                   </button>
                 </div>
               </div>
+
               <div class="row">
                 <div
                   class="footer-social-network d-flex justify-content-between"
                 >
-                  <span>© Amadeus IT Group SA</span>
+                  <span class="head-footer-social">© Amadeus IT Group SA</span>
                   <ul class="d-flex list-social">
                     <li>
                       <a href="">
@@ -730,4 +795,13 @@
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
     crossorigin="anonymous"
   ></script>
+  <script>
+    // Toggle the active class when the list item is clicked
+    document.querySelectorAll(".menu-list li").forEach((item) => {
+      item.addEventListener("click", function () {
+        // Toggle active class
+        this.classList.toggle("active");
+      });
+    });
+  </script>
 </html>
